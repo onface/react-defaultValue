@@ -1,7 +1,7 @@
 {
     "name": "react-defaultvalue",
     "main": "lib/index.js",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Implement the defaultValue quickly. `reactDefaultValue(Input)`",
     "keywords": "",
     "scripts": {
@@ -19,8 +19,7 @@
     "$repository": "react-defaultvalue",
     "dependencies": {
         "prop-types": "^15.6.0",
-        "sync-state": "^0.1.0",
-        "util.react": "^1.4.1"
+        "sync-state": "^0.1.0"
     },
     "devDependencies": {
         "babel": "^6.23.0",
