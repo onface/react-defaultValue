@@ -1,12 +1,12 @@
 {
     "name": "react-defaultvalue",
     "main": "lib/index.js",
-    "version": "0.1.2",
-    "description": "Implement the defaultValue quickly. `reactDefaultValue(Input)`",
+    "version": "0.2.0",
+    "description": "一行代码实现 defaultValue",
     "keywords": "",
     "scripts": {
         "dev": "rm -rf output && fis3 release -w -d ./output -r ./ -f compile/fis-conf.js",
-        "s": "node ./compile/open && node ./compile/server",
+        "s": "node ./compile/open && node    ./compile/server",
         "build:1": "rm -rf ./output && fis3 release build -d ./output -r ./ -f compile/fis-conf.js && fis3 release buildversion -d ./output -r ./ -f compile/fis-conf.js",
         "build:2": "webpack --progress  --config ./compile/webpack.online.config.js && webpack --progress  --config ./compile/webpack.online.version.config.js",
         "npm": "rm -rf ./output && fis3 release npm -d ./output -r ./ -f compile/fis-conf.js",
@@ -18,8 +18,7 @@
     "$username": "onface",
     "$repository": "react-defaultvalue",
     "dependencies": {
-        "prop-types": "^15.6.0",
-        "sync-state": "^0.1.0"
+
     },
     "devDependencies": {
         "babel": "^6.23.0",

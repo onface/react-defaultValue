@@ -901,6 +901,9 @@ a {
   vertical-align: middle;
   text-decoration: none;
 }
+.face-one-head-slogan {
+    margin-left: .5em;
+}
 .face-one-head-logo:hover {
   color: #4688f1;
 }
@@ -1514,6 +1517,7 @@ html .face-one-sidebar > ul > li {
   font-weight: 600;
 }
 .markdown-body p {
+  line-height: 1.6;
   margin-top: 0;
   margin-bottom: 10px;
 }

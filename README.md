@@ -9,7 +9,7 @@
 <div class="face-one-intro">
     <div class="face-one-intro-title">react-defaultvalue</div>
     <h2 class="face-one-intro-desc">
-        Implement the defaultValue quickly.
+        一行代码实现 defaultValue
     </h2>
     <div class="face-one-intro-tool">
         <a href="https://onface.github.io/react-defaultvalue" class="face-one-intro-btn face-one-intro-btn--primary mr-online-hide" >在线文档</a>
@@ -24,10 +24,26 @@
         <tr>
             <td align="center" >
                 <div class="face-one-feature-item">
-                    <img src="./doc/theme/media/cogwheel.svg" alt="" class="face-one-feature-item-photo">
+                    <img src="./doc/theme/media/keyword.svg" alt="" class="face-one-feature-item-photo">
+                    <br />
+                    <div class="face-one-feature-item-label">无副作用</div>
+                    <div class="face-one-feature-item-desc">代理输出输出，不污染组件内部 state</div>
+                </div>
+            </td>
+            <td align="center" >
+                <div class="face-one-feature-item">
+                    <img src="./doc/theme/media/laptop.svg" alt="" class="face-one-feature-item-- hoto">
                     <br />
                     <div class="face-one-feature-item-label">快速开发</div>
-                    <div class="face-one-feature-item-desc">一行代码让你的组件支持 defaultValue </div>
+                    <div class="face-one-feature-item-desc">一行代码让你的组件支持 <code>defaultValue</code> </div>
+                </div>
+            </td>
+            <td align="center" >
+                <div class="face-one-feature-item">
+                    <img src="./doc/theme/media/cogwheel.svg" alt="" class="face-one-feature-item-photo">
+                    <br />
+                    <div class="face-one-feature-item-label">兼容性强</div>
+                    <div class="face-one-feature-item-desc">支持自定义输入输出 <code>props.value</code> <code>props.onChange</code> </div>
                 </div>
             </td>
         </tr>

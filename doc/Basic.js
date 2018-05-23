@@ -5,9 +5,7 @@ class Count extends React.Component {
         const self = this
         return (
             <button onClick={() => {
-                if (typeof self.props.onChange === 'function' && typeof self.props.value === 'number') {
-                    self.props.onChange(self.props.value + 1)
-                }
+                self.props.onChange(self.props.value + 1)
             }} >{self.props.value}</button>
         )
     }
