@@ -50,7 +50,7 @@
     </table>
 </div>
 
-<div class="face-one-face-one-feature-title">
+<div class="face-one-feature-title">
     Creator
 </div>
 <div class="face-one-feature face-one-feature--creator">

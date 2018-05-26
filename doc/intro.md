@@ -92,25 +92,6 @@ if (typeof self.props.onChange === 'undefined') {
 />
 ```
 
-输入 `start` `end`
-```js
-<Range
-    start={self.state.start}
-    end={self.state.end}
-    onChange={self.handleChange}
-/>
-```
-
-```js
-<DatePicker
-    value={self.state.date}
-    onSelect={self.handleChange}
-    onDone={self.handleChange}
-/>
-// onSelect 日期控件选中时候的回调
-// onDone 日期控件点击确认按钮时的回调
-```
-
 标准的输入输出应该是
 
 ```js
@@ -159,44 +140,5 @@ Tooltip = require('react-defaultvalue')(Tooltip, {
 <Tooltip />
 <Tooltip defaultShow={true} />
 ```
-
-```js
-/*
-    <Range
-        start={self.state.start}
-        end={self.state.end}
-        onChange={self.handleChange}
-    />
-*/
-Range = require('react-defaultvalue')(Range, {
-    input: ['start', 'end']
-})
-```
-
-```js
-<Range defaultStart={1} defaultEnd={2} />
-```
-
-> 注意：我们不推荐 `start` `end` 这种多输入的接口设计，详情请参考[组件设计：输入输出](http://onface.live/component-spec/react/input-output.html)
-
-
-```js
-/*
-    <DatePicker
-        value={self.state.date}
-        onSelect={self.handleChange}
-        onDone={self.handleChange}
-    />
-*/
-DatePicker = require('react-defaultvalue')(DatePicker, {
-    output: ['onSelect', 'onDone']
-})
-```
-
-```js
-<DatePicker defaultValue="2017-11-25" />
-```
-
-> 注意：我们不推荐 `onSelect` `onDone` 这种**相同数据**多输出的接口设计，详情请参考[组件设计：输入输出](http://onface.live/component-spec/react/input-output.html)
 
 **[更多使用方法](./README.md)**
