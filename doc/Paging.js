@@ -11,19 +11,6 @@ class Paging extends Component {
         const self = this
         return (
             <div>
-                page:
-                <select
-                    value={self.props.page}
-                    onChange={function (e) {
-                        self.props.onChange(e.target.value)
-                    }}
-                >
-                    <option value="1" >1</option>
-                    <option value="2" >2</option>
-                    <option value="3" >3</option>
-                    <option value="4" >4</option>
-                    <option value="5" >5</option>
-                </select>
                 第:
                 <select
                     value={self.props.page}
@@ -40,9 +27,9 @@ class Paging extends Component {
                 页。
                 每页显示:
                 <select
-                    value={self.props.prePage}
+                    value={self.props.perPage}
                     onChange={function (e) {
-                        self.props.onChangePrePage(e.target.value)
+                        self.props.onChangePerPage(e.target.value)
                     }}
                 >
                     <option value="10" >10</option>
@@ -56,5 +43,5 @@ class Paging extends Component {
 }
 Paging.defaultProps = {
     onChange: functoin(){},
-    onChangePrePage: functoin(){},
+    onChangePerPage: functoin(){},
 export default Paging

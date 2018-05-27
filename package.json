@@ -18,7 +18,8 @@
     "$username": "onface",
     "$repository": "react-defaultvalue",
     "dependencies": {
-        "safe-extend": "^3.0.5"
+        "safe-extend": "^3.0.5",
+        "util.react": "^1.6.0"
     },
     "devDependencies": {
         "babel": "^6.23.0",

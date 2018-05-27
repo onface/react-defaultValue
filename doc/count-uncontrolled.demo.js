@@ -11,5 +11,5 @@ class UncontrolledCount extends React.Component {
 /*ONFACE-DEL*/UncontrolledCount = require("react-hot-loader").hot(module)(UncontrolledCount)
 ReactDOM.render(
     <UncontrolledCount />,
-    document.getElementById('uncontrolled-count-demo')
+    document.getElementById('count-uncontrolled-demo')
 )

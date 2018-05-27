@@ -12,5 +12,5 @@ class Count extends React.Component {
         )
     }
 }
-Count = require('../lib/index')(Count)
+Count = require('../lib/index')(Count /*, {input:'value', output:'onChange'} */)
 module.exports = Count

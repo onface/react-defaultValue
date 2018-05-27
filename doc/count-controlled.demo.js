@@ -23,5 +23,5 @@ class ControlledCount extends React.Component {
 /*ONFACE-DEL*/ControlledCount = require("react-hot-loader").hot(module)(ControlledCount)
 ReactDOM.render(
     <ControlledCount />,
-    document.getElementById('controlled-count-demo')
+    document.getElementById('count-controlled-demo')
 )
