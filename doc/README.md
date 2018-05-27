@@ -1,11 +1,11 @@
 # 文档
 
-# value&onChange
+## value&onChange
 
 ````code
 {
     title: '创建计数器',
-    desc: '`Count = require("react-defaultvalue")(Count)`<br />`<Count value={number} onChange={(number)=>{}} />`',
+    desc: '`<Count value={number} onChange={(number)=>{}} />`<br />`Count = require("react-defaultvalue")(Count)`',
     html: '',
     source: './Count.js',
     run: false,
@@ -41,7 +41,7 @@
 ````code
 {
     title: '创建提示层',
-    desc: '`Tooltip = require("react-defaultvalue")(Tooltip, {input: "show"})`<br />`<Tooltip show={boolean} onChange={(number)=>{}} />message</Tooltip>`',
+    desc: '`<Tooltip show={boolean} onChange={(number)=>{}}>message</Tooltip>`<br />`Tooltip = require("react-defaultvalue")(Tooltip, {input: "show"})`',
     html: '',
     source: './Tooltip.js',
     run: false,
@@ -64,10 +64,46 @@
 ````code
 {
     title: '调用提示层(受控)',
-    desc: '`<Tooltip show={boolean} onChange={function(value){}} >`',
+    desc: '`<Tooltip show={self.state.show} onChange={function(value){}} >`',
     html: '<div id="tooltip-controlled-demo" ></div>',
     source: './tooltip-controlled.demo.js',
     files:['./Tooltip.js'],
+    side: true
+}
+````
+
+## value&onPick
+
+````code
+{
+    title: '创建菜单',
+    desc: '`<Menu value={string} onPick={(string)=>{}} />`<br />`Menu = require("react-defaultvalue")(Menu, {output: "onPick"})`',
+    html: '',
+    source: './Menu.js',
+    run: false,
+    open: true
+}
+````
+
+
+````code
+{
+    title: '菜单(非受控)',
+    desc: '`<Menu defaultValue="egg" >`',
+    html: '<div id="menu-uncontrolled-demo" ></div>',
+    source: './menu-uncontrolled.demo.js',
+    files:['./Menu.js'],
+    side: true
+}
+````
+
+````code
+{
+    title: '菜单(受控)',
+    desc: '`<Menu value={self.state.value} onPick={function(){}} >`',
+    html: '<div id="menu-controlled-demo" ></div>',
+    source: './menu-controlled.demo.js',
+    files:['./Menu.js'],
     side: true
 }
 ````
