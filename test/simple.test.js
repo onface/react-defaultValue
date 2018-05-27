@@ -5,8 +5,26 @@ import { expect } from 'chai';
 import { mount } from 'enzyme';
 import React, { Component } from "react"
 import Count from "./Count"
-import ControlledCount from "./ControlledCount"
 
+class ControlledCount extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { value: 10 }
+    }
+    render () {
+        const self = this
+        return (
+            <Count
+                value={self.state.value}
+                onChange={function (value) {
+                    self.setState({
+                        value: value
+                    })
+                }}
+            />
+        )
+    }
+}
 
 describe('<Count />', () => {
     it('render count', () => {
