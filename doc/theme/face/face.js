@@ -163,3 +163,6 @@ jQuery(function ($) {
         })
     })
 })
+jQuery(function ($) {
+    $.getScript('https://onface.github.io/module/console.js')
+})
