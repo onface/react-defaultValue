@@ -4,7 +4,7 @@
 
 ````code
 {
-    title: '创建计数器',
+    title: '计数器',
     desc: '`<Count value={number} onChange={(number)=>{}} />`<br />`Count = require("react-defaultvalue")(Count)`',
     html: '',
     source: './Count.js',
@@ -40,7 +40,7 @@
 
 ````code
 {
-    title: '创建提示层',
+    title: '提示层',
     desc: '`<Tooltip show={boolean} onChange={(number)=>{}}>message</Tooltip>`<br />`Tooltip = require("react-defaultvalue")(Tooltip, {input: "show"})`',
     html: '',
     source: './Tooltip.js',
@@ -76,7 +76,7 @@
 
 ````code
 {
-    title: '创建菜单',
+    title: '菜单',
     desc: '`<Menu value={string} onPick={(string)=>{}} />`<br />`Menu = require("react-defaultvalue")(Menu, {output: "onPick"})`',
     html: '',
     source: './Menu.js',
@@ -143,7 +143,7 @@
 
 ````code
 {
-    title: '创建日期选择',
+    title: '日期选择',
     desc: '',
     html: '',
     source: './DatePicker.js',
@@ -171,6 +171,54 @@
     html: '<div id="datepicker-controlled-demo" ></div>',
     source: './datepicker-controlled.demo.js',
     files:['./DatePicker.js'],
+    side: true
+}
+````
+
+## multi-input-output
+
+有些组件会有多个输入输出，且输入输出的值是不同的。所以无法合并成一个输入输出。例如带每页数量的 `Paging`。
+
+````code
+{
+    title: '分页',
+    desc: '`<Paging page={1} perPage={10} onChange={} onChangePerPage={} />`',
+    html: '',
+    source: './Paging.js',
+    run: false,
+    open: true
+}
+````
+
+`input` `output` 改为 `Array` 且对应顺序即可支持多输入输出。
+
+```js
+Paging = require('react-defaultvalue')(Paging, {
+    input: ['page', 'perPage'],
+    output: ['onChange', 'onChangePerPage']
+})
+```
+
+> 多输入输出也是支持 `output.sync` 的 `{key:"onChange", sync: function(){/*...*/}}`
+
+````code
+{
+    title: '分页(非受控)',
+    desc: '`<Paging defaultPage={2} />`',
+    html: '<div id="paging-uncontrolled-demo" ></div>',
+    source: './paging-uncontrolled.demo.js',
+    files:['./Paging.js'],
+    side: true
+}
+````
+
+````code
+{
+    title: '分页(受控)',
+    desc: '`<Paging page={self.state.page} perPage={self.state.perPage}  />`',
+    html: '<div id="paging-controlled-demo" ></div>',
+    source: './paging-controlled.demo.js',
+    files:['./Paging.js'],
     side: true
 }
 ````

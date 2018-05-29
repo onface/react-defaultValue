@@ -5,6 +5,7 @@ class Paging extends Component {
         return (
             <div>
                 第:
+                <button>{self.props.page}</button>
                 <select
                     value={self.props.page}
                     onChange={function (e) {
@@ -17,6 +18,7 @@ class Paging extends Component {
                 </select>
                 页。
                 每页显示:
+                <button>{self.props.pageSize}</button>
                 <select
                     value={self.props.pageSize}
                     onChange={function (e) {
@@ -32,7 +34,9 @@ class Paging extends Component {
         )
     }
 }
-Paging = require('react-defaultvalue')(Paging, {
+global = global || {}
+global.isTestDoNotUseForward = true
+Paging = require('../lib/index')(Paging, {
     // 使用数组配置 多输入输出，但要注意对应顺序。
     input: ['page', 'pageSize'],
     output: ['onChange', 'onChangePageSize']
