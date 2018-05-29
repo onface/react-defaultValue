@@ -19,7 +19,7 @@
     "$repository": "react-defaultvalue",
     "optionalDependencies": {
         "react": "^16.4.0",
-        "react-dom": "^16.4.0"    
+        "react-dom": "^16.4.0"
     },
     "dependencies": {
         "safe-extend": "^3.0.5",
