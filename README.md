@@ -55,8 +55,21 @@
     </table>
 </div>
 
+<div style="text-align:center;" >
+    <a href="https://travis-ci.org/onface/react-defaultValue" style="text-decoration: none;" >
+        <img alt="Build Status" src="https://api.travis-ci.org/onface/react-defaultValue.svg?branch=master" />
+    </a>
+    <a href="https://npmjs.org/package/react-defaultValue"  style="text-decoration: none;" >
+        <img alt="NPM version" src="https://img.shields.io/npm/v/react-defaultValue.svg?style=flat" />
+    </a>
+    <a href="https://npmjs.org/package/react-defaultValue"  style="text-decoration: none;" >
+        <img alt="NPM downloads" src="https://img.shields.io/npm/dm/react-defaultValue.svg?style=flat" />
+    </a>
+</div>
+
+
 <a href="https://saucelabs.com/u/onface-react-defaultvalue" >
-    <img style="display:block;margin-left:auto;margin-right:auto;" src="https://saucelabs.com/browser-matrix/onface-react-defaultvalue.svg" alt="">
+    <img alt="Saucelabs Tests" style="display:block;margin-left:auto;margin-right:auto;" src="https://saucelabs.com/browser-matrix/onface-react-defaultvalue.svg" >
 </a>
 
 
