@@ -33,6 +33,8 @@ class Ref extends React.Component {
         )
     }
 }
+global = global || {}
+global.isTestDoNotUseForward = false
 Ref = reactDefaultValue(Ref)
 class RefWrap extends React.Component {
     componentWillMount () {

@@ -5,7 +5,6 @@ import { expect } from 'chai';
 import { mount } from 'enzyme';
 import React, { Component } from "react"
 import Tooltip from "./Tooltip"
-
 class ControlledTooltip extends React.Component {
     constructor(props) {
         super(props)

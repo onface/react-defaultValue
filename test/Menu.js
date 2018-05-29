@@ -25,6 +25,8 @@ Menu.defaultProps = {
     list: ['meat', 'juice', 'egg'],
     onPick:function (){}
 }
+global = global || {}
+global.isTestDoNotUseForward = true
 // 一行代码实现 defaultValue
 Menu = require('../lib/index')(Menu, {output: 'onPick'})
 module.exports = Menu

@@ -12,5 +12,7 @@ class Count extends React.Component {
         )
     }
 }
+global = global || {}
+global.isTestDoNotUseForward = true
 Count = require('../lib/index')(Count /*, {input:'value', output:'onChange'} */)
 module.exports = Count

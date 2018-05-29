@@ -18,6 +18,8 @@ class Tooltip extends Component {
         )
     }
 }
+global = global || {}
+global.isTestDoNotUseForward = true
 // 一行代码实现 defaultValue
 Tooltip = require('../lib/index')(Tooltip, {input: "show"})
 module.exports = Tooltip

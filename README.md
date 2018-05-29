@@ -26,8 +26,8 @@
                 <div class="face-one-feature-item">
                     <img src="./doc/theme/media/keyword.svg" alt="" class="face-one-feature-item-photo">
                     <br />
-                    <div class="face-one-feature-item-label">无副作用</div>
-                    <div class="face-one-feature-item-desc">代理输出输出，不污染组件内部 state</div>
+                    <div class="face-one-feature-item-label">高阶组件</div>
+                    <div class="face-one-feature-item-desc">代理输出输出，不修改组件内部状态<code>state</code></div>
                 </div>
             </td>
             <td align="center" >

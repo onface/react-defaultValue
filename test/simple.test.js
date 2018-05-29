@@ -5,7 +5,6 @@ import { expect } from 'chai';
 import { mount } from 'enzyme';
 import React, { Component } from "react"
 import Count from "./Count"
-
 class ControlledCount extends React.Component {
     constructor(props) {
         super(props)
