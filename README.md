@@ -10,7 +10,7 @@
 <div class="face-one-intro">
     <div class="face-one-intro-title">react-defaultvalue</div>
     <h2 class="face-one-intro-desc">
-        一行代码实现 defaultValue
+        一行代码实现 defaultvalue
     </h2>
     <div class="face-one-intro-tool">
         <a href="https://onface.github.io/react-defaultvalue" class="face-one-intro-btn face-one-intro-btn--primary mr-online-hide" >在线文档</a>
@@ -40,7 +40,7 @@
                     <img src="./doc/theme/media/laptop.svg" alt="" class="face-one-feature-item-- hoto">
                     <br />
                     <div class="face-one-feature-item-label">快速开发</div>
-                    <div class="face-one-feature-item-desc">一行代码让你的组件支持 <code>defaultValue</code> </div>
+                    <div class="face-one-feature-item-desc">一行代码让你的组件支持 <code>defaultvalue</code> </div>
                 </div>
             </td>
             <td align="center" >
@@ -56,14 +56,14 @@
 </div>
 
 <div style="text-align:center;" >
-    <a href="https://travis-ci.org/onface/react-defaultValue" style="text-decoration: none;" >
-        <img alt="Build Status" src="https://api.travis-ci.org/onface/react-defaultValue.svg?branch=master" />
+    <a href="https://travis-ci.org/onface/react-defaultvalue" style="text-decoration: none;" >
+        <img alt="Build Status" src="https://api.travis-ci.org/onface/react-defaultvalue.svg?branch=master" />
     </a>
-    <a href="https://npmjs.org/package/react-defaultValue"  style="text-decoration: none;" >
-        <img alt="NPM version" src="https://img.shields.io/npm/v/react-defaultValue.svg?style=flat" />
+    <a href="https://npmjs.org/package/react-defaultvalue"  style="text-decoration: none;" >
+        <img alt="NPM version" src="https://img.shields.io/npm/v/react-defaultvalue.svg?style=flat" />
     </a>
-    <a href="https://npmjs.org/package/react-defaultValue"  style="text-decoration: none;" >
-        <img alt="NPM downloads" src="https://img.shields.io/npm/dm/react-defaultValue.svg?style=flat" />
+    <a href="https://npmjs.org/package/react-defaultvalue"  style="text-decoration: none;" >
+        <img alt="NPM downloads" src="https://img.shields.io/npm/dm/react-defaultvalue.svg?style=flat" />
     </a>
 </div>
 
