@@ -108,6 +108,34 @@
 }
 ````
 
+## input.default
+
+有些组件的 `defaultValue` 也需要有默认值。例如：
+
+````code
+{
+    title: '提示文字',
+    desc: '业务需求是提示文字默认是显示的',
+    html: '',
+    source: './Tip.js',
+    run: false,
+    open: true
+}
+````
+
+通过配置 `{key: 'show', default: true}` 设置 `defaultShow` 的默认值
+
+````code
+{
+    title: '提示文字(非受控)',
+    desc: '',
+    html: '<div id="tip-uncontrolled-demo"></div>',
+    source: './tip-uncontrolled.demo.js',
+    files:['./Tip.js'],
+    side: true
+}
+````
+
 ## output.sync
 
 某些控件的输出(`output`)会包括很多信息，不适合直接将 `output` 函数的第一个参数 , `event.target.value` , `event.target.checked` 作为 输入(`input`) 保存。
@@ -139,7 +167,6 @@
  这种形式，或者这个组件是第三方的你无法修改。那么可以使用 `output.sync` 自定义返回值。
 
 > DatePicker 这个例子更好的接口设计不返回 `value.time`, `value` 的内容就是字符串 `"2012-11-11"`
-
 
 ````code
 {
