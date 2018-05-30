@@ -191,6 +191,17 @@ PACKAGE_JSON = {
     version: "0.2.0",
 }
 </script>
+<script>
+    if (location.pathname === '/' + PACKAGE_JSON.$repository) {
+        var url = [
+            location.origin,
+            '/' + PACKAGE_JSON.$repository + '/',
+            location.search,
+            location.hash
+        ].join('')
+        location.href = url
+    }
+</script>
 
 <script src="doc/theme/jquery.js"></script>
 <script>delete window.$</script>
