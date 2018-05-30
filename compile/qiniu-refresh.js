@@ -12,7 +12,7 @@ const mac = new qiniu.auth.digest.Mac(process.env.QINIU_AK, process.env.QINIU_SK
 const cdnManager = new qiniu.cdn.CdnManager(mac)
 
 var defaultDomain = 'https://onface.live'
-var defaultPublichPath = defaultDomain + '/' + iPackage.$repository + '/'
+var defaultPublichPath = defaultDomain + '/' + iPackage.$repository
 
 
 var refreshFiles = glob.sync('output/**/**.**').map(function (path) {
