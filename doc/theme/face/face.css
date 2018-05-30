@@ -2060,6 +2060,9 @@ a.face-one-feature-item .face-one-feature-item-label {
   transition: color .3s;
   color: #777;
 }
+.face-one-code--side .face-one-code-info-switchCode {
+  font-size:1.5em;
+}
 .face-one-code-source-tool-preview,
 .face-one-code-source-tool-copy,
 .face-one-code-info-switchCode {
@@ -2161,7 +2164,6 @@ html .face-one-code-source-tool-copy {
 }
 @media screen and (max-width: 750px) {
   .face-one-code-info-switchCode {
-    font-size: 1em;
     bottom: .25em;
   }
   .face-one-code--side .face-one-code-info-switchCode {
