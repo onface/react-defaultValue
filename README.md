@@ -10,10 +10,10 @@
 <div class="face-one-intro">
     <div class="face-one-intro-title">react-defaultvalue</div>
     <h2 class="face-one-intro-desc">
-         defaultvalue HOC
+        一行代码实现 defaultvalue
     </h2>
     <div class="face-one-intro-tool">
-        <!-- <a href="https://onface.github.io/react-defaultvalue" class="face-one-intro-btn face-one-intro-btn--primary mr-online-hide" >在线文档</a> -->
+        <a href="https://onface.github.io/react-defaultvalue" class="face-one-intro-btn face-one-intro-btn--primary mr-online-hide" >在线文档</a>
         <!-- MARKRUN-HTML
             <a href="./doc/intro.md" class="face-one-intro-btn face-one-intro-btn--primary">指引</a>
             <a href="http://github.com/onface/react-defaultvalue" class="face-one-intro-btn">GITHUB</a>
@@ -28,35 +28,29 @@
                 <div class="face-one-feature-item">
                     <img src="./doc/theme/media/keyword.svg" alt="" class="face-one-feature-item-photo">
                     <br />
-                    <div class="face-one-feature-item-label">HOC</div>
-                    <div class="face-one-feature-item-desc">High order component
-The agent outputs output without modifying the internal state of the component <code>state</code></div>
+                    <div class="face-one-feature-item-label">高阶组件</div>
+                    <div class="face-one-feature-item-desc">代理输出输出，不修改组件内部状态<code>state</code></div>
                 </div>
             </td>
             <td align="center" >
                 <div class="face-one-feature-item">
                     <img src="./doc/theme/media/laptop.svg" alt="" class="face-one-feature-item-- hoto">
                     <br />
-                    <div class="face-one-feature-item-label">Rapid development of</div>
-                    <div class="face-one-feature-item-desc">One line of code allows your component to support it <code>defaultvalue</code> </div>
+                    <div class="face-one-feature-item-label">快速开发</div>
+                    <div class="face-one-feature-item-desc">一行代码让你的组件支持 <code>defaultvalue</code> </div>
                 </div>
             </td>
             <td align="center" >
                 <div class="face-one-feature-item">
                     <img src="./doc/theme/media/cogwheel.svg" alt="" class="face-one-feature-item-photo">
                     <br />
-                    <div class="face-one-feature-item-label">Strong compatibility</div>
-                    <div class="face-one-feature-item-desc">Support for custom input and output <code>props.value</code> <code>props.onChange</code> </div>
+                    <div class="face-one-feature-item-label">兼容性强</div>
+                    <div class="face-one-feature-item-desc">支持自定义输入输出 <code>props.value</code> <code>props.onChange</code> </div>
                 </div>
             </td>
         </tr>
     </table>
 </div>
-
-<pre>
-YouComponent = require('react-defaultvalue')(YouComponent, {input: "show", output: "onChange"})
-</pre>
-
 
 <div style="text-align:center;" >
     <a href="https://travis-ci.org/onface/react-defaultvalue" style="text-decoration: none;" >
